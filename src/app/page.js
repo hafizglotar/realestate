@@ -1,101 +1,60 @@
+import HomeBanner from "@/components/HomeBanner";
+import ServiceBox from "@/components/ServiceBox";
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    return (
+        <div className="homeOuter w-full">
+            <HomeBanner />
+            <div className="w-full max-w-7xl m-auto mt-24">
+                <div className="homeContentTop">
+                    <h2 className="text-[30px] font-semibold">Top Tiar</h2>
+                    <h4 className="text-[20px] font-semibold mb-6">Real Estate Agency in Dubai</h4>
+                    <p className="mb-10">Dubai's booming real estate market presents an excellent opportunity for individuals and investors to buy, sell, or rent properties. Established in 2005, AQUA Properties has earned prestigious awards for its innovative approach, becoming a trusted name in the industry. Our Dubai-based real estate company offers expert assistance for residential, commercial, and luxury properties. With over a decade of experience, our RERA-certified professionals prioritise personalised service, integrity, discretion, and effective communication. Whether you're searching for apartments, townhouses, or luxury villas, we streamline the process for buyers, sellers, and renters, providing reliable advice and comprehensive property management services in Dubai.</p>
+                    <div className="mb-16">
+                        <h4 className="text-[20px] font-semibold mb-6">What sets up apart?</h4>
+                        <ul className="grid grid-cols-2 gap-6 text-xm">
+                            <li><strong>Quick Response:</strong> We guarantee swift responses to client inquiries, ensuring their needs are promptly addressed by dedicated real estate brokers.</li>
+                            <li><strong>Experienced Staff:</strong> Our team comprises diligent individuals with exceptional credentials and comprehensive training, providing top-notch services to clients.</li>
+                            <li><strong>First-Class Service:</strong> We simplify the home buying and selling process, managing negotiations and paperwork on behalf of all parties involved.</li>
+                            <li><strong>Trusted Agency:</strong> With over 2 decades of experience, RERA-certified agents, and prestigious awards, we are a trusted partner for buying and selling properties in Dubai.</li>
+                            <li><strong>Wide Selection:</strong> Access our expanding portfolio of residential real estate listings for the latest properties and emerging neighborhoods.</li>
+                            <li><strong>Marketing Promotions:</strong> We maximize property exposure through popular portals like Bayut, Property Finder, Dubizzle, social channels, and more.</li>
+                        </ul>
+                    </div>
+                    <div className="mb-16">
+                        <span className="text-xm">Our Property Services</span>
+                        <h2 className="text-[30px] font-semibold mb-6">We do it best</h2>
+                        <p>With over 20 years of industry experience, AQUA Properties is committed to creating impact & value for clients and communities. As one of Dubai's most trusted and leading real estate companies, AQUA Properties offers comprehensive services, including buying, selling, renting, property management, development management, off-plan projects, asset management, and handover services. With over 20 years of industry experience, we are committed to delivering trust, integrity, exceptional results, and value for our clients and communities.</p>
+                    </div>
+                </div>
+                <div className="mb-16 flex gap-6">
+                    <ServiceBox 
+                        serviceTitle="Assets Manangement" 
+                        serviceLink="https://www.google.com"
+                        serviceBoxImage="/images/assets-management.png"
+                        altText="assets-management.png"
+                    />
+                    <ServiceBox 
+                        serviceTitle="Sale & Marketing" 
+                        serviceLink="https://www.google.com"
+                        serviceBoxImage="/images/project-sales-marketing.png"
+                        altText="project-sales-marketing.png"
+                    />
+                    <ServiceBox 
+                        serviceTitle="Property Manangement" 
+                        serviceLink="https://www.google.com"
+                        serviceBoxImage="/images/property-management.png"
+                        altText="property-management.png"
+                    />
+                    <ServiceBox 
+                        serviceTitle="Handover Services" 
+                        serviceLink="https://www.google.com"
+                        serviceBoxImage="/images/handover-services.png"
+                        altText="handover-services.png"
+                    />
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
