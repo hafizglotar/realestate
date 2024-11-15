@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,4 +23,8 @@ body {
     color: #666666;
     background: var(--background);
     font-family: 'Poppins', sans-serif;
+}
+.serviceBoxCarousel .slick-track {
+    display: flex;
+    gap: 20px;
 }

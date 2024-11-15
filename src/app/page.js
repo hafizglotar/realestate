@@ -1,6 +1,8 @@
+'use client'
 import HomeBanner from "@/components/HomeBanner";
-import ServiceBox from "@/components/ServiceBox";
-import Image from "next/image";
+import PropertyTabs from "@/components/PropertyTabs";
+import ServiceBoxSlider from "@/components/ServiceBoxSlider";
+import TheCommunityBox from "@/components/TheCommunityBox";
 
 export default function Home() {
     return (
@@ -28,31 +30,14 @@ export default function Home() {
                         <p>With over 20 years of industry experience, AQUA Properties is committed to creating impact & value for clients and communities. As one of Dubai's most trusted and leading real estate companies, AQUA Properties offers comprehensive services, including buying, selling, renting, property management, development management, off-plan projects, asset management, and handover services. With over 20 years of industry experience, we are committed to delivering trust, integrity, exceptional results, and value for our clients and communities.</p>
                     </div>
                 </div>
-                <div className="mb-16 flex gap-6">
-                    <ServiceBox 
-                        serviceTitle="Assets Manangement" 
-                        serviceLink="https://www.google.com"
-                        serviceBoxImage="/images/assets-management.png"
-                        altText="assets-management.png"
-                    />
-                    <ServiceBox 
-                        serviceTitle="Sale & Marketing" 
-                        serviceLink="https://www.google.com"
-                        serviceBoxImage="/images/project-sales-marketing.png"
-                        altText="project-sales-marketing.png"
-                    />
-                    <ServiceBox 
-                        serviceTitle="Property Manangement" 
-                        serviceLink="https://www.google.com"
-                        serviceBoxImage="/images/property-management.png"
-                        altText="property-management.png"
-                    />
-                    <ServiceBox 
-                        serviceTitle="Handover Services" 
-                        serviceLink="https://www.google.com"
-                        serviceBoxImage="/images/handover-services.png"
-                        altText="handover-services.png"
-                    />
+                <div className="mb-16">
+                    <ServiceBoxSlider />
+                </div>
+                <div className="mb-16">
+                    <PropertyTabs />
+                </div>
+                <div className="mb-16">
+                    <TheCommunityBox />
                 </div>
             </div>
         </div>
