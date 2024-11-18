@@ -2,13 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 const OffPlanBanner = ({imgSrc, imgAlt, imgWidth, imgHeight}) => {
   return (
-        <Image 
+        <Image
+            className='imgHeight' 
             src={imgSrc}
             alt={imgAlt}
-            // width={imgWidth} 
-            // height={imgHeight} 
-            layout="fill" // Ensures the image fills the container
-            objectFit="cover" // Ensures the image covers the container
+            width={imgWidth} 
+            height={imgHeight} 
         />
     )
 }

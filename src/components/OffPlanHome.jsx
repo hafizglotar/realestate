@@ -20,38 +20,46 @@ const OffPlanHome = () => {
             </div>
             <div className="w-7/12 flex h-[700px]">
                 <div className='w-1/4 relative'>
-                    <Link href="#">
+                    <Link href="#" className='h-full block'>
                         <OffPlanBanner 
                             className="h-full w-full"
                             imgSrc="/images/tcd.jpg"
                             imgAlt="tcd.jpg"
+                            imgWidth={1000}
+                            imgHeight={1000}
                         />
                     </Link>
                 </div>
                 <div className='w-1/4 relative'>
-                    <Link href="#">
+                    <Link href="#" className='h-full block'>
                         <OffPlanBanner 
                             className="h-full w-full"
                             imgSrc="/images/bugatti.webp"
                             imgAlt="bugatti.jpg"
+                            imgWidth={1000}
+                            imgHeight={1000}
                         />
                     </Link>
                 </div>
                 <div className='w-1/4 relative'>
-                    <Link href="#">
+                    <Link href="#" className='h-full block'>
                         <OffPlanBanner 
-                            className="h-full w-full"
+                            className="h-full w-full "
                             imgSrc="/images/helvetia.webp"
                             imgAlt="helvetia.jpg"
+                            imgWidth={1000}
+                            imgHeight={1000}
                         />
                     </Link>
                 </div>
                 <div className='w-1/4 relative'>
-                    <Link href="#">
+                    <Link href="#" className='h-full block'>
                         <OffPlanBanner 
                             className="h-full w-full"
                             imgSrc="/images/parklane.webp"
                             imgAlt="parklane.jpg"
+                            imgWidth={1000}
+                            imgHeight={1000}
                         />
                     </Link>
                 </div>

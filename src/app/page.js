@@ -1,7 +1,11 @@
 'use client'
+import GoogleReviews from "@/components/GoogleReviews";
 import HomeBanner from "@/components/HomeBanner";
+import LocationSliderIndex from "@/components/LocationSliderIndex";
 import OffPlanHome from "@/components/OffPlanHome";
 import PropertyTabs from "@/components/PropertyTabs";
+import SelectionLocationIndex from "@/components/SelectionLocationIndex";
+import SelectLocationBox from "@/components/SelectLocationBox";
 import ServiceBoxSlider from "@/components/ServiceBoxSlider";
 import TheCommunityBox from "@/components/TheCommunityBox";
 
@@ -44,7 +48,17 @@ export default function Home() {
             <div className="mb-16">
                 <OffPlanHome />
             </div>
-
+            <div className="w-full max-w-7xl m-auto">
+                <div className="mb-16">
+                    <SelectionLocationIndex />
+                </div>
+                <div className="mb-16">
+                    <GoogleReviews />
+                </div>
+                <div className="mb-16">
+                    <LocationSliderIndex />
+                </div>
+            </div>
         </div>
     );
 }

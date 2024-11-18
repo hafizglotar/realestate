@@ -6,7 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 /* styles/globals.css */
-
+* {
+  box-sizing: border-box;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -27,4 +29,18 @@ body {
 .serviceBoxCarousel .slick-track {
     display: flex;
     gap: 20px;
+}
+.sliderTrack, .locationSliderTrack {
+  width: 100%;
+}
+.sliderTrack .slick-track {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+.imgHeight {
+  height: 100%;
+}
+.boxSliderOuter {
+  display: flex !important;
 }
