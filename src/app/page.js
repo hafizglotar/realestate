@@ -1,5 +1,6 @@
 'use client'
 import HomeBanner from "@/components/HomeBanner";
+import OffPlanHome from "@/components/OffPlanHome";
 import PropertyTabs from "@/components/PropertyTabs";
 import ServiceBoxSlider from "@/components/ServiceBoxSlider";
 import TheCommunityBox from "@/components/TheCommunityBox";
@@ -40,6 +41,10 @@ export default function Home() {
                     <TheCommunityBox />
                 </div>
             </div>
+            <div className="mb-16">
+                <OffPlanHome />
+            </div>
+
         </div>
     );
 }

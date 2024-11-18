@@ -5,7 +5,6 @@ import React from 'react';
 
 const LinkButton = ({ href, children, bgColor, textColor, borderColor, hoverColor, hoverTextColor }) => {
     const buttonStyle = {
-        // minWidth: '200px',
         textAlign: 'center',
         background: bgColor ? bgColor : 'linear-gradient(to right, #54bbf0, #65d5f1)',
         padding: '8px 36px',
