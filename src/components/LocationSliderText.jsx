@@ -6,7 +6,7 @@ const LocationSliderText = ({title, address, openingTime, phoneNumber, locationL
         <div>
             <h2 className="text-[30px] font-semibold mb-3 text-white">Find us</h2>
             <span className='font-semibold block mb-2'>{title}</span>
-            <div className='text-sm leading-relaxed mb-3'>
+            <div className='leading-relaxed mb-3'>
                 <p className='w-8/12'> {address} </p>
                 <p>{openingTime}</p>
                 <span className="font-bold block">

@@ -44,3 +44,9 @@ body {
 .boxSliderOuter {
   display: flex !important;
 }
+.blueColor {
+  color: #1bb9ed;
+}
+.aquaGradient {
+  background-image: linear-gradient(to right, #00bdf5, #0dcdf4);
+}
